@@ -1,0 +1,32 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	padding-top: 80px !important;
+}
+
+p {
+	text-align: center;
+}
+
+.checkbox {
+	padding-left: 50px;
+}
+
+.btn{
+	margin-bottom: 15px !important;
+}
+
+table{
+	font-weight: bold;
+	color: black !important;
+}
+
+img {
+	padding-bottom: 20px;
+	width: 125px;
+	height: 100px;
+	float: right !important;
+}
+
+a {
+	text-decoration: none !important;
+}

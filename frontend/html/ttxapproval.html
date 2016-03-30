@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TTX PROJECT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--  <link rel="stylesheet" type="text/css" href="ap.css">  -->
+ 
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ 
+ <!-- Footable -->
+      <link rel="stylesheet" href="../css/footable.core.css"> 
+      <link rel="stylesheet" href="../css/footable.metro.css">
+      <script src="../js/jquery-1.12.1.js"></script>
+      <script type="text/javascript" src="../js/footable.js"></script>
+ 
+ 
+  
+ 
+<style>
+.form-control {
+    display: block;
+    width: 78%;
+    height: 27px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+   
+  .head {
+    height: 1;
+    border: 0;
+    border-top: 6px solid #6c4d22;
+    margin: 20px 0;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+      <p></p>
+      <br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <p>I.T. Department</p>
+             <p>  
+              Training Requests Approval Sheet for the Direct Reports of </p>
+             <p>
+                Wissel, SC
+             </p>
+              
+             <p >
+              (Y-Approved; N-Not Approved; P-Pending; N/A-Approval not required)
+             </p>
+        </div>
+</div>
+
+<div class="container-fluid">
+  <hr class="head" class="col-md-12 col-xs-12">
+</div>
+
+
+
+<div class="container">
+  <h4>Past Requests</h4>
+  <br>
+        <!--  row ///////////////////////////////////////////////////// -->
+    <div class="row">
+      <!-- Selectors #1 -->
+        <div class="col-md-3 col-sm-6">
+          <form role="form">
+            <div class="form-group">
+              <label for="sel1">Employee Name</label>
+              <select class="form-control" id="sel1" required>
+                <option>All </option>
+                <option>Howard Johnson</option>
+                <option>Toriana Williams</option>
+                <option>Luis Arce</option>
+                <option>Sergii Cherevko</option>
+                <option>Aslan Ussayev</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6">
+          <form action="action_page.php">
+            <label> Course Starts (date and time):</label>
+            <br>
+            <input type="datetime-local" name="bdaytime" required>
+          </form>
+        </div>
+
+            <!-- Selectors #2 -->
+         <div class="col-md-3 col-sm-6">
+          <form action="action_page.php">
+            <label> Course Ends (date and time):</label>
+            <br>
+            <input type="datetime-local" name="bdaytime" required>
+          </form>
+         </div>
+
+          <!-- Selector #3 -->
+        <div class="col-md-3 col-sm-6">
+          <p></p>
+          <button type="button" class="btn" style="background-color:#527f92; color: white;">Search</button>
+        </div>
+
+
+    </div> <!-- End row -->  
+</div>
+
+<!-- second line -->
+<div class="container-fluid">
+  <hr class="head" class="col-md-12 col-xs-12">
+
+   <div class="col-md-12 text-center">
+      
+        <a href="#" class="btn btn-lg" style="background-color:#527f92; color: white;">
+          <span class="glyphicon glyphicon-info-sign"></span> Rejected Requests List
+        </a>
+
+   </div>
+
+</div>
+<!-- end second line -->
+
+<div class="container-fluid">
+  <hr class="head" class="col-md-12 col-xs-12">
+</div>
+
+  <div class="container">
+    <h4>Outstanding Requests</h4>
+      <br>
+        <!--  table ///////////////////////////////////////////////////// -->
+          
+                    <table class="table" id="ftable">
+                      <thead>
+                        <tr>
+                          <th>Requestor</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Supv Appv</th>
+                           <th>DH Appv</th>
+                          <th>Course Completion Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          
+                          <td>
+                            <button type="button" class="btn" aria-label="Left Align" style="background-color:#983222; color: white;">
+                              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            </button>
+                            <a href="#">20130043</a> Tech Ed 2014
+                          </td>
+                          <td>5/12/2014</td>
+                          <td>5/15/2014</td>
+                          <td>Y</td>
+                           <td>Y</td>
+                          <td></td>
+                          
+                        </tr>
+                            <td>
+                              <button type="button" class="btn" aria-label="Left Align" style="background-color:#983222; color: white;">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                              </button>
+                              <a href="#">20130043</a> Tech Ed 2014
+                            </td>
+                            <td>5/12/2014</td>
+                            <td>5/15/2014</td>
+                            <td>Y</td>
+                             <td>Y</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button type="button" class="btn" aria-label="Left Align" style="background-color:#983222; color: white;">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                              </button>
+                              <a href="#">20130043</a> Tech Ed 2014
+                            </td>
+                            <td>5/12/2014</td>
+                            <td>5/15/2014</td>
+                            <td>Y</td>
+                             <td>Y</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button type="button" class="btn" aria-label="Left Align" style="background-color:#983222; color: white;">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                              </button>
+                              <a href="#">20130043</a> Tech Ed 2014
+                            </td>
+                            <td>5/12/2014</td>
+                            <td>5/15/2014</td>
+                            <td>Y</td>
+                             <td>Y</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button type="button" class="btn" aria-label="Left Align" style="background-color:#983222; color: white;">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                              </button>
+                              <a href="#">20130043</a> Tech Ed 2014
+                            </td>
+                            <td>5/12/2014</td>
+                            <td>5/15/2014</td>
+                            <td>Y</td>
+                             <td>Y</td>
+                            <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+        <!-- end table -->
+        
+  <div class="container-fluid">
+    <div class="col-xs-12 text-center">
+          <span class="copyright">Copyright © Windy City IT Group 2016</span>
+      </div>
+
+  </div>
+
+<hr>
+</body>
+
+  <script type="text/javascript">
+
+     $(document).ready(function(){
+         
+         $('.table').footable();
+         
+     });
+    </script>
+</html>

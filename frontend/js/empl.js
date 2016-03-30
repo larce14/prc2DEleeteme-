@@ -10,12 +10,14 @@ $(document).ready(function(){
         "<td>" + rowObject.trng_cors_end_dt + "</td>" +
         "<td>" + rowObject.trng_reqst_immed_supv_apvl_flg + "</td>" +
         "<td>" + rowObject.trng_reqst_dept_hd_apvl_flg + "</td>" +
-        "<td>" + rowObject.trng_cors_compl_flg + "</td></tr>"
+        "<td>" + rowObject.trng_cors_compl_flg + "</td></tr>";
+        
     });
 
      $('#ftable').html(employeeString);
     });
 });
+
 
 function getStub(endpoint, callback){
   var stubbedJson="";
